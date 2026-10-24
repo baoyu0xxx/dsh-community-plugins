@@ -1686,5 +1686,16 @@
     "npm": "@hyzyn/dsh-loglens",
     "category": "tools",
     "subcategory": "dev"
+  },
+  {
+    "id": "dsh-better-auto-review",
+    "name": "规则优先审核",
+    "nameEn": "Better Auto Review",
+    "author": "baoyu0xxx",
+    "description": "面向工具调用的两层审核闸门：第一层用固定规则判定放行、拒绝或升级，不调模型；只有升级的调用才交给审核模型。审核模型默认跟随对话主模型、可按插件覆盖，审核失败默认询问用户而非直接拒绝，每次裁决写入可轮转、可脱敏的 JSON 审计日志。以独立权限预设 B-Auto Review 启用，可与官方 Auto review 共存。",
+    "descriptionEn": "A two-layer tool-call review gate: fixed rules decide allow, deny, or escalate without a model call, and only escalated calls reach a reviewer model. The reviewer defaults to the conversation's main model and can be overridden per plugin; a reviewer failure asks the human by default instead of refusing the call. Every decision is written to a rotating, credential-redacted JSON audit log. Armed by its own B-Auto Review permission preset, so it coexists with the shipped Auto review.",
+    "repo": "https://github.com/baoyu0xxx/dsh-better-auto-review",
+    "category": "security",
+    "subcategory": "policy"
   }
 ]
